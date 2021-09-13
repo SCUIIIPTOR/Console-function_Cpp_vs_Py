@@ -1,6 +1,6 @@
 # Фитнес — функция подсчёта калорийности и перевода избытка/недостачи в жир (грамм)
 
-def calories_statistics(name_person, calories_received, calories_spent):                    		# 1. Аргументы функции: имя, калоирии потраченные, калории полученные.
+def calories_statistics(name_person, calories_received, calories_spent):                    		        # 1. Аргументы функции: имя, калоирии потраченные, калории полученные.
 
 	if int(calories_received) > int(calories_spent):                                        		# 2. Сравнение значений двух аргументов отвечающих за калорийность.
 		difference_fat = int(calories_received) - int(calories_spent)
@@ -24,8 +24,8 @@ def calories_statistics(name_person, calories_received, calories_spent):        
 		print(f'{name_person}, за сегодня уровень калорий остался неизменным.')             		# 10. Вывод значения не относящегося к накоплению/трате калорий.
 
 
-input_name_person = input('Введите пожалуйста имя: ').title()                               		# 11. Ввод имени.
-input_calories_received = input('Введите количество полученных за день калорий: ').title()  		# 12. Ввод значения полученных за день калорий.
-input_calories_spent = input('Введите количество потраченных калорий: ').title()            		# 13. Ввод значения потраченых калорий за день.
+input_name_person = input('Введите пожалуйста имя: ').title()                               		        # 11. Ввод имени.
+input_calories_received = input('Введите количество полученных за день калорий: ').title()  		        # 12. Ввод значения полученных за день калорий.
+input_calories_spent = input('Введите количество потраченных калорий: ').title()            		        # 13. Ввод значения потраченых калорий за день.
 information_person = [input_name_person, input_calories_received, input_calories_spent]
-print(calories_statistics(*information_person))                                             		# 14. Получение данных.
+print(calories_statistics(*information_person))                                             		        # 14. Получение данных.
